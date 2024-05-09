@@ -1,32 +1,41 @@
 :root {
-    --green:#00ff00; 
+    --green: #00ff00; 
     --white: #ffffff; 
     --black: #000000;
+    --font-color: helvetica;
 }
 
-.btn{
-   position: absolute;
-   top: 20px;
-   left: 250px;
-   height: 50px;
-   width: 50px;
-   border-radius: 50%;
-   border: none;
-   color: var(--btnFontColor);
-   background-color: (--btnBg);
+.btn {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg); /* Corrigido */
 }
 
-.btn:focus {outline-style: none;}
+.btn:focus {
+    outline-style: none;
+}
 
 body {
     background: var(--bg);
 }
 
-ul {font-family: helvetica};
+ul {
+    font-family: helvetica; /* Corrigido */
+}
 
-li {list-style: circle};
+li {
+    list-style: circle; /* Corrigido */
+}
 
-.list {list-style: square};
+/* .list {
+    list-style: square; // Seletor não parece ser usado
+} */
 
 .light-theme {
     --bg: var(--green);
@@ -35,12 +44,10 @@ li {list-style: circle};
     --btnFontColor: var(--white);
 }
 
-.dark-theme {
-    --bg: var(--black);
-    --font-color: var(--green);
-    --btnBg: var(--black);
-    --btnFontColor: var(--green);
+.dark-theme 
+{
+  --bg: var(--black);
+  --font-color: var(--green); 
+  --btnBg: var(--black);
+  --btnFontColor: var(--green);
 }
-
-
-
